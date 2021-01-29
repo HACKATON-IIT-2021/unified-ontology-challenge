@@ -1,0 +1,1123 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/<username>/ontologies/2020/11/procurement"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/<username>/ontologies/2020/11/procurement">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#APIServiceResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssignSourceOfSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttributePrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRolePrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreateAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeleteAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeliveryDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdAttributePrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfoRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LineOfBusiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ODataPurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prerequisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseOrderItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseRequisitionItemText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchasingDocumentItemCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchasingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForBusinessEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForPrerequisites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadPurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RequestedQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SelfContainedAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceCall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SourceOfSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#URL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdateAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdateSourceOfSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdateValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#changesValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enablesAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAllowedAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrerequisites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasURL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttributeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOptional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#references"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAcronym"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStringValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSynonym"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MM_PUR_PR_PROCESS_SRV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PRExample1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plant_1310"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TG-D060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01012021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10000014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1310"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#30"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AssignSourceOfSupply"/>
+        <Class IRI="#UpdateSourceOfSupply"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QueryForAction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#affects"/>
+                <Class IRI="#PurchaseRequisition"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#changesValue"/>
+                <Class IRI="#SourceOfSupply"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QueryForBusinessEntity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BusinessEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttribute"/>
+                <Class IRI="#SourceOfSupply"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasAttribute"/>
+                <NamedIndividual IRI="#10000014"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QueryForPrerequisites"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prerequisite"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isMandatoryFor"/>
+                <Class IRI="#UpdateSourceOfSupply"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QueryForService"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ServiceCall"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#enablesAction"/>
+                <Class IRI="#UpdateSourceOfSupply"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#APIServiceResult"/>
+        <Class IRI="#Result"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssignSourceOfSupply"/>
+        <Class IRI="#SelfContainedAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttributePrerequisite"/>
+        <Class IRI="#Prerequisite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttributePrerequisite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMandatoryFor"/>
+            <Class IRI="#CRUDAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseUnit"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessEntity"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessEntity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAllowedAction"/>
+            <Class IRI="#CRUDAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessEntity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#ID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessProcess"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRole"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRolePrerequisite"/>
+        <Class IRI="#Prerequisite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#BusinessEntity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisites"/>
+            <Class IRI="#IdAttributePrerequisite"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasService"/>
+            <Class IRI="#OData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contract"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractItem"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreateAction"/>
+        <Class IRI="#CRUDAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeleteAction"/>
+        <Class IRI="#CRUDAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveryDate"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveryDate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ID"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ID"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdAttributePrerequisite"/>
+        <Class IRI="#AttributePrerequisite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdAttributePrerequisite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMandatoryFor"/>
+            <Class IRI="#UpdateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdAttributePrerequisite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMandatoryFor"/>
+            <Class IRI="#UpdateSourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfoRecord"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LineOfBusiness"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialGroup"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OData"/>
+        <Class IRI="#ServiceCall"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#UpdateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasResult"/>
+            <Class IRI="#APIServiceResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ODataPurchaseRequisition"/>
+        <Class IRI="#OData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ODataPurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#UpdateSourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prerequisite"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Price"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Price"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrder"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrderItem"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAllowedAction"/>
+            <Class IRI="#AssignSourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAllowedAction"/>
+            <Class IRI="#UpdateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#DeliveryDate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#ID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#MaterialGroup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Plant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Price"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#PurchasingOrganization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#RequestedQuantity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#SourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisitionItemText"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchasingDocumentItemCategory"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchasingOrganization"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchasingOrganization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadAction"/>
+        <Class IRI="#CRUDAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadPurchaseRequisition"/>
+        <Class IRI="#ReadAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadPurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadPurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasService"/>
+            <Class IRI="#ODataPurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RequestedQuantity"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RequestedQuantity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Result"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SelfContainedAction"/>
+        <Class IRI="#ComplexAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceCall"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceCall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasResult"/>
+            <Class IRI="#Result"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceCall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasURL"/>
+            <Class IRI="#URL"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#CreateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#DeleteAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#ReadAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enablesAction"/>
+            <Class IRI="#UpdateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAttributeOf"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#references"/>
+            <Class IRI="#Contract"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceOfSupply"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasStringValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#URL"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateAction"/>
+        <Class IRI="#CRUDAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisites"/>
+            <Class IRI="#UpdateValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+        <Class IRI="#UpdateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasService"/>
+            <Class IRI="#ODataPurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateSourceOfSupply"/>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateSourceOfSupply"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#changesValue"/>
+            <Class IRI="#SourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateValue"/>
+        <Class IRI="#AttributePrerequisite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMandatoryFor"/>
+            <Class IRI="#UpdateAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMandatoryFor"/>
+            <Class IRI="#UpdateSourceOfSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBusinessRole"/>
+            <Class IRI="#BusinessRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BaseUnit"/>
+        <Class IRI="#DeliveryDate"/>
+        <Class IRI="#ID"/>
+        <Class IRI="#Material"/>
+        <Class IRI="#MaterialGroup"/>
+        <Class IRI="#Plant"/>
+        <Class IRI="#Price"/>
+        <Class IRI="#PurchaseRequisitionItemText"/>
+        <Class IRI="#PurchasingDocumentItemCategory"/>
+        <Class IRI="#PurchasingOrganization"/>
+        <Class IRI="#RequestedQuantity"/>
+        <Class IRI="#SourceOfSupply"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BaseUnit"/>
+        <Class IRI="#DeliveryDate"/>
+        <Class IRI="#ID"/>
+        <Class IRI="#Material"/>
+        <Class IRI="#MaterialGroup"/>
+        <Class IRI="#Plant"/>
+        <Class IRI="#PurchaseRequisitionItemText"/>
+        <Class IRI="#PurchasingDocumentItemCategory"/>
+        <Class IRI="#PurchasingOrganization"/>
+        <Class IRI="#RequestedQuantity"/>
+        <Class IRI="#SourceOfSupply"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ODataPurchaseRequisition"/>
+        <NamedIndividual IRI="#MM_PUR_PR_PROCESS_SRV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PurchaseRequisition"/>
+        <NamedIndividual IRI="#PRExample1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Plant_1310"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#TG-D060"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeliveryDate"/>
+        <NamedIndividual IRI="#01012021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ID"/>
+        <NamedIndividual IRI="#10000014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PurchasingOrganization"/>
+        <NamedIndividual IRI="#1310"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RequestedQuantity"/>
+        <NamedIndividual IRI="#30"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#Plant_1310"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#TG-D060"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#01012021"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#10000014"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#1310"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <NamedIndividual IRI="#PRExample1"/>
+        <NamedIndividual IRI="#30"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affects"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#changesValue"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#enablesAction"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAllowedAction"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessDomain"/>
+        <ObjectProperty IRI="#hasDomain"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessRole"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDomain"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrerequisites"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResult"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasService"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasURL"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttributeOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOptional"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#Relation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPrerequisites"/>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#affects"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#changesValue"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#enablesAction"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasAllowedAction"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasService"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#CRUDAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enablesAction"/>
+        <Class IRI="#ServiceCall"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <Class IRI="#BusinessEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+        <Class IRI="#Prerequisite"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#BusinessEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#changesValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#changesValue"/>
+            <Class IRI="#Attribute"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enablesAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrerequisites"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisites"/>
+            <Class IRI="#Prerequisite"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMandatoryFor"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAcronym"/>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLabel"/>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStringValue"/>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSynonym"/>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLabel"/>
+        <Class IRI="#BusinessEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSynonym"/>
+        <Class IRI="#Attribute"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSynonym"/>
+        <Class IRI="#BusinessEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/d069170/ontologies/2020/8/ekg-ontology#DataProperty"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAcronym"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAcronym"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStringValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSynonym"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
