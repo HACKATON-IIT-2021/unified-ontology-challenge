@@ -1,0 +1,1682 @@
+@prefix : <http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14> .
+
+<http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessEntityModelRelation
+:BusinessEntityModelRelation rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :Relation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessProcessModelRelation
+:BusinessProcessModelRelation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :Relation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessServiceModelRelation
+:BusinessServiceModelRelation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :Relation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CrossBusinessEntityAndProcessModel
+:CrossBusinessEntityAndProcessModel rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf :Relation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CrossBusinessEntityAndServiceModel
+:CrossBusinessEntityAndServiceModel rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf :Relation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Relation
+:Relation rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#belongsToBusinessActivityGroup
+:belongsToBusinessActivityGroup rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#exchangesMessageWith
+:exchangesMessageWith rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasAPIBody
+:hasAPIBody rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasAPIBodyParameter
+:hasAPIBodyParameter rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasBusinessAttribute
+:hasBusinessAttribute rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasBusinessProcessModelAttribute
+:hasBusinessProcessModelAttribute rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasCollaboration
+:hasCollaboration rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasEndEvent
+:hasEndEvent rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasEntityType
+:hasEntityType rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasFilterParameter
+:hasFilterParameter rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasFlowNode
+:hasFlowNode rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasHttpMethod
+:hasHttpMethod rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasKey
+:hasKey rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasLane
+:hasLane rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasLaneSet
+:hasLaneSet rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasOperation
+:hasOperation rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasParallelGateway
+:hasParallelGateway rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasParent
+:hasParent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasProcessFlow
+:hasProcessFlow rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasRequestBody
+:hasRequestBody rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasSequenceFlow
+:hasSequenceFlow rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasService
+:hasService rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :BusinessServiceModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasServiceTask
+:hasServiceTask rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasStartEvent
+:hasStartEvent rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasStructrueOf
+:hasStructrueOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#hasUserTask
+:hasUserTask rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#implementedByAPI
+:implementedByAPI rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :CrossBusinessEntityAndServiceModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#implementsAPIRequest
+:implementsAPIRequest rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :CrossBusinessEntityAndServiceModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#implementsBusinessOperation
+:implementsBusinessOperation rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :CrossBusinessEntityAndServiceModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isABodyInBusinessServiceAPI
+:isABodyInBusinessServiceAPI rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :CrossBusinessEntityAndServiceModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isAFilterInBusinessServiceAPI
+:isAFilterInBusinessServiceAPI rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :CrossBusinessEntityAndServiceModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isAssociationTo
+:isAssociationTo rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isCompositionOf
+:isCompositionOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :BusinessEntityModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isExecutedBy
+:isExecutedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isPartOfColaboration
+:isPartOfColaboration rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isSucceededBy
+:isSucceededBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#mapsToBusinessEntityOperation
+:mapsToBusinessEntityOperation rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :CrossBusinessEntityAndProcessModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#operatesOnBusinessEntity
+:operatesOnBusinessEntity rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :CrossBusinessEntityAndProcessModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#producesOutput
+:producesOutput rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#usesInput
+:usesInput rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :BusinessProcessModelRelation .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ID
+:ID rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#jsonBody
+:jsonBody rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIBody
+:APIBody rdf:type owl:Class ;
+         rdfs:subClassOf :SAPAPIBusinessHub ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isABodyInBusinessServiceAPI ;
+                           owl:someValuesFrom :APIService
+                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIBodyParameter
+:APIBodyParameter rdf:type owl:Class ;
+                  rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIBodyUpdatePurchaseRequisitionItemOfPurchaseRequisitionWithFixedSupplier
+:APIBodyUpdatePurchaseRequisitionItemOfPurchaseRequisitionWithFixedSupplier rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :APIBody ,
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty :isABodyInBusinessServiceAPI ;
+                                                                                              owl:someValuesFrom :Patch_API_PURCHASEREQ_PROCESS_SRV
+                                                                                            ] ,
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty :jsonBody ;
+                                                                                              owl:someValuesFrom xsd:string
+                                                                                            ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIPackage
+:APIPackage rdf:type owl:Class ;
+            rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIRequest
+:APIRequest rdf:type owl:Class ;
+            rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIService
+:APIService rdf:type owl:Class ;
+            rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIServiceEntityFilterParameter
+:APIServiceEntityFilterParameter rdf:type owl:Class ;
+                                 rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIServiceEntityType
+:APIServiceEntityType rdf:type owl:Class ;
+                      rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#APIType
+:APIType rdf:type owl:Class ;
+         rdfs:subClassOf :SAPAPIBusinessHub .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#API_PURCHASEREQ_PROCESS_SRV
+:API_PURCHASEREQ_PROCESS_SRV rdf:type owl:Class ;
+                             rdfs:subClassOf :APIService ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasEntityType ;
+                                               owl:someValuesFrom :A_PurchaseRequisitionItem
+                                             ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#A_PurchaseRequisitionItem
+:A_PurchaseRequisitionItem rdf:type owl:Class ;
+                           rdfs:subClassOf :APIServiceEntityType .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#AccountAssignmentCategoryCode
+:AccountAssignmentCategoryCode rdf:type owl:Class ;
+                               rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#AccountsPayableAccountant
+:AccountsPayableAccountant rdf:type owl:Class ;
+                           rdfs:subClassOf :Lane .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :ModifyOperation ;
+        owl:disjointWith :Function .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Amount
+:Amount rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ApprovePurchaseOrder
+:ApprovePurchaseOrder rdf:type owl:Class ;
+                      rdfs:subClassOf :UserTask .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#AssignSource
+:AssignSource rdf:type owl:Class ;
+              rdfs:subClassOf :BusinessActivity ,
+                              :UserTask ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isSucceededBy ;
+                                owl:someValuesFrom :ConvertPurchaseRequisitiontoPurchase_Order
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :mapsToBusinessEntityOperation ;
+                                owl:someValuesFrom :UpdatePurchaseRequisition
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :operatesOnBusinessEntity ;
+                                owl:someValuesFrom :PurchaseRequisition
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :belongsToBusinessActivityGroup ;
+                                owl:allValuesFrom :SourcingAndProcurement
+                              ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#AutomaticApprovalOfPurchaseOrder
+:AutomaticApprovalOfPurchaseOrder rdf:type owl:Class ;
+                                  rdfs:subClassOf :ServiceTask .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessActivity
+:BusinessActivity rdf:type owl:Class ;
+                  rdfs:subClassOf :BusinessProcessModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessAttribute
+:BusinessAttribute rdf:type owl:Class ;
+                   rdfs:subClassOf :OneVirtualDomainModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessEntity
+:BusinessEntity rdf:type owl:Class ;
+                rdfs:subClassOf :OneVirtualDomainModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessEntityModel
+:BusinessEntityModel rdf:type owl:Class ;
+                     rdfs:subClassOf :SAP .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessOperation
+:BusinessOperation rdf:type owl:Class ;
+                   rdfs:subClassOf :OneVirtualDomainModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessProcess
+:BusinessProcess rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessProcessModel ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasCollaboration ;
+                                   owl:allValuesFrom :CAI_POC_S4HANA_Collaboration
+                                 ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessProcessGroup
+:BusinessProcessGroup rdf:type owl:Class ;
+                      rdfs:subClassOf :BusinessProcessModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessProcessModel
+:BusinessProcessModel rdf:type owl:Class ;
+                      rdfs:subClassOf :SAP .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessProcessModelproperties
+:BusinessProcessModelproperties rdf:type owl:Class ;
+                                rdfs:subClassOf :BusinessSolutionModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessServiceImplementation
+:BusinessServiceImplementation rdf:type owl:Class ;
+                               rdfs:subClassOf :SAP .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessSolutionModel
+:BusinessSolutionModel rdf:type owl:Class ;
+                       rdfs:subClassOf :BusinessProcessModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessSolutionProcess
+:BusinessSolutionProcess rdf:type owl:Class ;
+                         rdfs:subClassOf :BusinessSolutionModel ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessProcessModelAttribute ;
+                                           owl:allValuesFrom :id
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessProcessModelAttribute ;
+                                           owl:allValuesFrom :name
+                                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessTechnologyPlatform
+:BusinessTechnologyPlatform rdf:type owl:Class ;
+                            rdfs:subClassOf :SAP .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#BusinessTechnologyPlatformTenant
+:BusinessTechnologyPlatformTenant rdf:type owl:Class ;
+                                  rdfs:subClassOf :BusinessTechnologyPlatform .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CAI_POC_S4HANA
+:CAI_POC_S4HANA rdf:type owl:Class ;
+                rdfs:subClassOf :BusinessSolutionProcess ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasBusinessProcessModelAttribute ;
+                                  owl:allValuesFrom :id
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasBusinessProcessModelAttribute ;
+                                  owl:allValuesFrom :targetNameSpace
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCollaboration ;
+                                  owl:allValuesFrom :CAI_POC_S4HANA_Collaboration
+                                ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CAI_POC_S4HANA_Collaboration
+:CAI_POC_S4HANA_Collaboration rdf:type owl:Class ;
+                              rdfs:subClassOf :Collaboration ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasBusinessProcessModelAttribute ;
+                                                owl:allValuesFrom :id
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasBusinessProcessModelAttribute ;
+                                                owl:allValuesFrom :name
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasParticipant ;
+                                                owl:allValuesFrom <http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#S/4_HANA_Cloud>
+                                              ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Collaboration
+:Collaboration rdf:type owl:Class ;
+               rdfs:subClassOf :BusinessSolutionModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CompanyCode
+:CompanyCode rdf:type owl:Class ;
+             rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ConvertPurchaseRequisitiontoPurchase_Order
+:ConvertPurchaseRequisitiontoPurchase_Order rdf:type owl:Class ;
+                                            rdfs:subClassOf :UserTask .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Create
+:Create rdf:type owl:Class ;
+        rdfs:subClassOf :StandardOperationCUD .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CreateByAssociation
+:CreateByAssociation rdf:type owl:Class ;
+                     rdfs:subClassOf :StandardOperationCUD .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#CreateSupplierInvoice
+:CreateSupplierInvoice rdf:type owl:Class ;
+                       rdfs:subClassOf :UserTask .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#DELETE
+:DELETE rdf:type owl:Class ;
+        rdfs:subClassOf :RESTMethods .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#DateTime
+:DateTime rdf:type owl:Class ;
+          rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#DecisionMaker
+:DecisionMaker rdf:type owl:Class ;
+               rdfs:subClassOf :Gateway .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Delete
+:Delete rdf:type owl:Class ;
+        rdfs:subClassOf :StandardOperationCUD .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#EndEvent
+:EndEvent rdf:type owl:Class ;
+          rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :SequenceFlowNode .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#FixedSupplier
+:FixedSupplier rdf:type owl:Class ;
+               rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#FlowNode
+:FlowNode rdf:type owl:Class ;
+          rdfs:subClassOf :BusinessSolutionModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf :ReadOperation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#GET
+:GET rdf:type owl:Class ;
+     rdfs:subClassOf :RESTMethods .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Gateway
+:Gateway rdf:type owl:Class ;
+         rdfs:subClassOf :SequenceFlowNode .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Get_API_PURCHASEREQ_PROCESS_SRV
+:Get_API_PURCHASEREQ_PROCESS_SRV rdf:type owl:Class ;
+                                 rdfs:subClassOf :API_PURCHASEREQ_PROCESS_SRV .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#GoodsReceivedAndInvoiceCreated
+:GoodsReceivedAndInvoiceCreated rdf:type owl:Class ;
+                                rdfs:subClassOf :EndEvent ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :isSucceededBy ;
+                                                  owl:someValuesFrom :IdentifyUnsourcedPurchaseRequisition
+                                                ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#HTTPBody
+:HTTPBody rdf:type owl:Class ;
+          rdfs:subClassOf :REST .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#HTTPHeader
+:HTTPHeader rdf:type owl:Class ;
+            rdfs:subClassOf :REST .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#IdentifyUnsourcedPurchaseRequisition
+:IdentifyUnsourcedPurchaseRequisition rdf:type owl:Class ;
+                                      rdfs:subClassOf :UserTask ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :isSucceededBy ;
+                                                        owl:someValuesFrom :AssignSource
+                                                      ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Lane
+:Lane rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessSolutionModel ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasBusinessProcessModelAttribute ;
+                        owl:someValuesFrom :id
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasBusinessProcessModelAttribute ;
+                        owl:someValuesFrom :name
+                      ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#LaneSet
+:LaneSet rdf:type owl:Class ;
+         rdfs:subClassOf :BusinessSolutionModel ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasLane ;
+                           owl:someValuesFrom :Lane
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasBusinessProcessModelAttribute ;
+                           owl:allValuesFrom :id
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasBusinessProcessModelAttribute ;
+                           owl:allValuesFrom :name
+                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#MailTask
+:MailTask rdf:type owl:Class ;
+          rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Manager
+:Manager rdf:type owl:Class ;
+         rdfs:subClassOf :Lane .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ModifyOperation
+:ModifyOperation rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessOperation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#NetOrderValue
+:NetOrderValue rdf:type owl:Class ;
+               rdfs:subClassOf :DecisionMaker .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ODATA
+:ODATA rdf:type owl:Class ;
+       rdfs:subClassOf :APIType ;
+       owl:disjointWith :SOAP .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#OneVirtualDomainModel
+:OneVirtualDomainModel rdf:type owl:Class ;
+                       rdfs:subClassOf :BusinessEntityModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#OperationalProcurement
+:OperationalProcurement rdf:type owl:Class ;
+                        rdfs:subClassOf :Supply .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PATCH
+:PATCH rdf:type owl:Class ;
+       rdfs:subClassOf :RESTMethods .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#POST
+:POST rdf:type owl:Class ;
+      rdfs:subClassOf :RESTMethods .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf :BusinessSolutionModel .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Patch_API_PURCHASEREQ_PROCESS_SRV
+:Patch_API_PURCHASEREQ_PROCESS_SRV rdf:type owl:Class ;
+                                   rdfs:subClassOf :API_PURCHASEREQ_PROCESS_SRV ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasAPIBody ;
+                                                     owl:someValuesFrom :APIBodyUpdatePurchaseRequisitionItemOfPurchaseRequisitionWithFixedSupplier
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasFilterParameter ;
+                                                     owl:someValuesFrom :PurchaseRequisition
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasFilterParameter ;
+                                                     owl:someValuesFrom :PurchaseRequisitionItem
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasHttpMethod ;
+                                                     owl:someValuesFrom :PATCH
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :implementsAPIRequest ;
+                                                     owl:someValuesFrom :UpdatePurchaseRequisitionItemOfPurchaseRequisition
+                                                   ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PaymentTermsCode
+:PaymentTermsCode rdf:type owl:Class ;
+                  rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Plant
+:Plant rdf:type owl:Class ;
+       rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PostGoodsReceipt
+:PostGoodsReceipt rdf:type owl:Class ;
+                  rdfs:subClassOf :UserTask .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PublicAPI
+:PublicAPI rdf:type owl:Class ;
+           rdfs:subClassOf :BusinessServiceImplementation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseContractItemReference
+:PurchaseContractItemReference rdf:type owl:Class ;
+                               rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseDocumentAddress
+:PurchaseDocumentAddress rdf:type owl:Class ;
+                         rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseDocumentItem
+:PurchaseDocumentItem rdf:type owl:Class ;
+                      rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseRequisition
+:PurchaseRequisition rdf:type owl:Class ;
+                     rdfs:subClassOf :BusinessEntity ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasOperation ;
+                                       owl:someValuesFrom :UpdatePurchaseRequisition
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isAFilterInBusinessServiceAPI ;
+                                       owl:someValuesFrom :Patch_API_PURCHASEREQ_PROCESS_SRV
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :description
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :displayId
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :items
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :logicalSystem
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :note
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :preparer
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :status
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasBusinessAttribute ;
+                                       owl:allValuesFrom :version
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :ID ;
+                                       owl:someValuesFrom xsd:string
+                                     ] ;
+                     owl:disjointWith :PurchaseRequisitionItem .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseRequisitionItem
+:PurchaseRequisitionItem rdf:type owl:Class ;
+                         rdfs:subClassOf :BusinessEntity ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :isAFilterInBusinessServiceAPI ;
+                                           owl:someValuesFrom :Patch_API_PURCHASEREQ_PROCESS_SRV
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :accountAssignmentCategory
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :companyCode
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :deliveryAddress
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :deliveryAt
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :deliveryTimeZone
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :note
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :number
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :parent
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :paymentTerms
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :plant
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :price
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :purchaseContractItem
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :purchasingGroup
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :purchasingOrganization
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :supplier
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :supplierLocation
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :taxAmountPerUnit
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :taxCode
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :taxJurisdiction
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBusinessAttribute ;
+                                           owl:allValuesFrom :type
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasKey ;
+                                           owl:allValuesFrom :number
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasKey ;
+                                           owl:allValuesFrom :parent
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :ID ;
+                                           owl:someValuesFrom xsd:string
+                                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseRequisitionStatusCode
+:PurchaseRequisitionStatusCode rdf:type owl:Class ;
+                               rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchaseRequisitionTypeCode
+:PurchaseRequisitionTypeCode rdf:type owl:Class ;
+                             rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Purchaser
+:Purchaser rdf:type owl:Class ;
+           rdfs:subClassOf :Lane ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasFlowNode ;
+                             owl:someValuesFrom :AssignSource
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasFlowNode ;
+                             owl:someValuesFrom :ConvertPurchaseRequisitiontoPurchase_Order
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasFlowNode ;
+                             owl:someValuesFrom :IdentifyUnsourcedPurchaseRequisition
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasStartEvent ;
+                             owl:someValuesFrom :UnsourcedPurchaseRequisition
+                           ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchasingGroup
+:PurchasingGroup rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchasingInfoRecord
+:PurchasingInfoRecord rdf:type owl:Class ;
+                      rdfs:subClassOf :APIBodyParameter ,
+                                      :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#PurchasingOrganization
+:PurchasingOrganization rdf:type owl:Class ;
+                        rdfs:subClassOf :APIBodyParameter ,
+                                        :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#QueryForAPICallBody
+:QueryForAPICallBody rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :APIBody
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :isABodyInBusinessServiceAPI ;
+                                                                  owl:hasValue :EKG_POC_API_CALL
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#QueryForAPIRequest
+:QueryForAPIRequest rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :APIRequest
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :implementsBusinessOperation ;
+                                                                 owl:someValuesFrom :UpdatePurchaseRequisition
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#QueryForAPIServiceImplementation
+:QueryForAPIServiceImplementation rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( :APIService
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :implementsAPIRequest ;
+                                                                               owl:someValuesFrom :UpdatePurchaseRequisitionItemOfPurchaseRequisition
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#QueryForFilterParameters
+:QueryForFilterParameters rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :BusinessEntity
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :isAFilterInBusinessServiceAPI ;
+                                                                       owl:hasValue :EKG_POC_API_CALL
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#QueryOperation
+:QueryOperation rdf:type owl:Class ;
+                rdfs:subClassOf :ReadOperation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#REST
+:REST rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessServiceImplementation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#RESTMethods
+:RESTMethods rdf:type owl:Class ;
+             rdfs:subClassOf :REST .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ReadOperation
+:ReadOperation rdf:type owl:Class ;
+               rdfs:subClassOf :BusinessOperation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SAP
+:SAP rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SAPAPIBusinessHub
+:SAPAPIBusinessHub rdf:type owl:Class ;
+                   rdfs:subClassOf :PublicAPI ;
+                   owl:disjointWith :SAPGraph .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SAPGraph
+:SAPGraph rdf:type owl:Class ;
+          rdfs:subClassOf :PublicAPI .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SOAP
+:SOAP rdf:type owl:Class ;
+      rdfs:subClassOf :APIType .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ScriptTask
+:ScriptTask rdf:type owl:Class ;
+            rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SequenceFlowNode
+:SequenceFlowNode rdf:type owl:Class ;
+                  rdfs:subClassOf :FlowNode .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#ServiceTask
+:ServiceTask rdf:type owl:Class ;
+             rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Source-To-Pay-Flow
+:Source-To-Pay-Flow rdf:type owl:Class ;
+                    rdfs:subClassOf :BusinessProcess ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasBusinessProcessModelAttribute ;
+                                      owl:allValuesFrom :id
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasBusinessProcessModelAttribute ;
+                                      owl:allValuesFrom :isExecutable
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasBusinessProcessModelAttribute ;
+                                      owl:allValuesFrom :name
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasCollaboration ;
+                                      owl:allValuesFrom :CAI_POC_S4HANA_Collaboration
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasLaneSet ;
+                                      owl:allValuesFrom :LaneSet
+                                    ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Source-To-Pay-LaneSet
+:Source-To-Pay-LaneSet rdf:type owl:Class ;
+                       rdfs:subClassOf :LaneSet ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasLane ;
+                                         owl:someValuesFrom :AccountsPayableAccountant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasLane ;
+                                         owl:someValuesFrom :Manager
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasLane ;
+                                         owl:someValuesFrom :Purchaser
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasLane ;
+                                         owl:someValuesFrom :WarehouseClerk
+                                       ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SourcingAndProcurement
+:SourcingAndProcurement rdf:type owl:Class ;
+                        rdfs:subClassOf :OperationalProcurement .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#StandardOperationCUD
+:StandardOperationCUD rdf:type owl:Class ;
+                      rdfs:subClassOf :ModifyOperation .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#StartEvent
+:StartEvent rdf:type owl:Class ;
+            rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Supplier
+:Supplier rdf:type owl:Class ;
+          rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Supply
+:Supply rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessProcessGroup .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf :SequenceFlowNode .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#TaxCode
+:TaxCode rdf:type owl:Class ;
+         rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#TaxJurisdictionCode
+:TaxJurisdictionCode rdf:type owl:Class ;
+                     rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#TimeZoneCode
+:TimeZoneCode rdf:type owl:Class ;
+              rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#UnsourcedPurchaseRequisition
+:UnsourcedPurchaseRequisition rdf:type owl:Class ;
+                              rdfs:subClassOf :StartEvent .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#Update
+:Update rdf:type owl:Class ;
+        rdfs:subClassOf :StandardOperationCUD .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#UpdatePurchaseRequisition
+:UpdatePurchaseRequisition rdf:type owl:Class ;
+                           rdfs:subClassOf :Update .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#UpdatePurchaseRequisitionItemOfPurchaseRequisition
+:UpdatePurchaseRequisitionItemOfPurchaseRequisition rdf:type owl:Class ;
+                                                    rdfs:subClassOf :APIRequest ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasAPIBody ;
+                                                                      owl:someValuesFrom :APIBodyUpdatePurchaseRequisitionItemOfPurchaseRequisitionWithFixedSupplier
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasEntityType ;
+                                                                      owl:someValuesFrom :A_PurchaseRequisitionItem
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasFilterParameter ;
+                                                                      owl:someValuesFrom :PurchaseRequisition
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasFilterParameter ;
+                                                                      owl:someValuesFrom :PurchaseRequisitionItem
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasHttpMethod ;
+                                                                      owl:someValuesFrom :PATCH
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasService ;
+                                                                      owl:someValuesFrom :API_PURCHASEREQ_PROCESS_SRV
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :implementsBusinessOperation ;
+                                                                      owl:someValuesFrom :UpdatePurchaseRequisition
+                                                                    ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessEntity .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#UserTask
+:UserTask rdf:type owl:Class ;
+          rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#WarehouseClerk
+:WarehouseClerk rdf:type owl:Class ;
+                rdfs:subClassOf :Lane .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#accountAssignmentCategory
+:accountAssignmentCategory rdf:type owl:Class ;
+                           rdfs:subClassOf :BusinessAttribute ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasStructrueOf ;
+                                             owl:allValuesFrom :AccountAssignmentCategoryCode
+                                           ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#companyCode
+:companyCode rdf:type owl:Class ;
+             rdfs:subClassOf :BusinessAttribute ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isAssociationTo ;
+                               owl:allValuesFrom :CompanyCode
+                             ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#deliveryAddress
+:deliveryAddress rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessAttribute ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasStructrueOf ;
+                                   owl:allValuesFrom :PurchaseDocumentAddress
+                                 ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#deliveryAt
+:deliveryAt rdf:type owl:Class ;
+            rdfs:subClassOf :BusinessAttribute ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasStructrueOf ;
+                              owl:allValuesFrom :DateTime
+                            ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#deliveryTimeZone
+:deliveryTimeZone rdf:type owl:Class ;
+                  rdfs:subClassOf :BusinessAttribute ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasStructrueOf ;
+                                    owl:allValuesFrom :TimeZoneCode
+                                  ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#description
+:description rdf:type owl:Class ;
+             rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#displayId
+:displayId rdf:type owl:Class ;
+           rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#id
+:id rdf:type owl:Class ;
+    rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#isExecutable
+:isExecutable rdf:type owl:Class ;
+              rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#items
+:items rdf:type owl:Class ;
+       rdfs:subClassOf :BusinessAttribute ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isCompositionOf ;
+                         owl:someValuesFrom :PurchaseRequisitionItem
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasParent ;
+                         owl:allValuesFrom :PurchaseRequisitionItem
+                       ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#logicalSystem
+:logicalSystem rdf:type owl:Class ;
+               rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#name
+:name rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#note
+:note rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#number
+:number rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#parent
+:parent rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessAttribute ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isAssociationTo ;
+                          owl:allValuesFrom :PurchaseRequisition
+                        ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#paymentTerms
+:paymentTerms rdf:type owl:Class ;
+              rdfs:subClassOf :BusinessAttribute ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasStructrueOf ;
+                                owl:allValuesFrom :PaymentTermsCode
+                              ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#plant
+:plant rdf:type owl:Class ;
+       rdfs:subClassOf :BusinessAttribute ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isAssociationTo ;
+                         owl:allValuesFrom :Plant
+                       ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#preparer
+:preparer rdf:type owl:Class ;
+          rdfs:subClassOf :BusinessAttribute ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isAssociationTo ;
+                            owl:allValuesFrom :User
+                          ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#price
+:price rdf:type owl:Class ;
+       rdfs:subClassOf :BusinessAttribute ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasStructrueOf ;
+                         owl:allValuesFrom :Amount
+                       ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#purchaseContractItem
+:purchaseContractItem rdf:type owl:Class ;
+                      rdfs:subClassOf :BusinessAttribute ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasStructrueOf ;
+                                        owl:allValuesFrom :PurchaseContractItemReference
+                                      ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#purchasingGroup
+:purchasingGroup rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#purchasingOrganization
+:purchasingOrganization rdf:type owl:Class ;
+                        rdfs:subClassOf :BusinessAttribute ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :isAssociationTo ;
+                                          owl:allValuesFrom :PurchasingOrganization
+                                        ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#source
+:source rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#status
+:status rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessAttribute ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isCompositionOf ;
+                          owl:allValuesFrom :PurchaseRequisitionStatusCode
+                        ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#supplier
+:supplier rdf:type owl:Class ;
+          rdfs:subClassOf :BusinessAttribute ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isAssociationTo ;
+                            owl:allValuesFrom :Supplier
+                          ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#supplierLocation
+:supplierLocation rdf:type owl:Class ;
+                  rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#target
+:target rdf:type owl:Class ;
+        rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#targetNameSpace
+:targetNameSpace rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessProcessModelproperties .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#taxAmountPerUnit
+:taxAmountPerUnit rdf:type owl:Class ;
+                  rdfs:subClassOf :BusinessAttribute ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasStructrueOf ;
+                                    owl:allValuesFrom :Amount
+                                  ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#taxCode
+:taxCode rdf:type owl:Class ;
+         rdfs:subClassOf :BusinessAttribute ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStructrueOf ;
+                           owl:allValuesFrom :TaxCode
+                         ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#taxJurisdiction
+:taxJurisdiction rdf:type owl:Class ;
+                 rdfs:subClassOf :BusinessAttribute ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasStructrueOf ;
+                                   owl:allValuesFrom :TaxJurisdictionCode
+                                 ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#type
+:type rdf:type owl:Class ;
+      rdfs:subClassOf :BusinessAttribute ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasStructrueOf ;
+                        owl:allValuesFrom :PurchaseRequisitionTypeCode
+                      ] .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#version
+:version rdf:type owl:Class ;
+         rdfs:subClassOf :BusinessAttribute .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#S/4_HANA_Cloud
+<http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#S/4_HANA_Cloud> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :Participant .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SAP_S/4HANA_CLOUD
+<http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#SAP_S/4HANA_CLOUD> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :APIPackage .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#EKG_POC_API_BODY
+:EKG_POC_API_BODY rdf:type owl:NamedIndividual ,
+                           :APIBodyUpdatePurchaseRequisitionItemOfPurchaseRequisitionWithFixedSupplier ;
+                  :isABodyInBusinessServiceAPI :EKG_POC_API_CALL ;
+                  :jsonBody """{
+\"PurchaseRequisition\":\"0010125586\",
+\"PurchaseRequisitionItem\":\"00010\",
+\"PurchasingOrganization\":\"E001\",
+\"FixedSupplier\":\"F1V1\",
+\"PurchasingInfoRecord\": \"5300007356\"
+}"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#EKG_POC_API_CALL
+:EKG_POC_API_CALL rdf:type owl:NamedIndividual ,
+                           :Patch_API_PURCHASEREQ_PROCESS_SRV ;
+                  :hasAPIBody :EKG_POC_API_BODY .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#EKG_POC_FILTER_PR
+:EKG_POC_FILTER_PR rdf:type owl:NamedIndividual ,
+                            :PurchaseRequisition ;
+                   :isAFilterInBusinessServiceAPI :EKG_POC_API_CALL ;
+                   :ID "00010"^^xsd:string .
+
+
+###  http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14#EKG_POC_FILTER_PR_ITEM
+:EKG_POC_FILTER_PR_ITEM rdf:type owl:NamedIndividual ,
+                                 :PurchaseRequisitionItem ;
+                        :isAFilterInBusinessServiceAPI :EKG_POC_API_CALL ;
+                        :ID "0010125586"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :APIBody
+                :APIBodyParameter
+                :APIPackage
+                :APIRequest
+                :APIService
+                :APIServiceEntityFilterParameter
+                :APIServiceEntityType
+                :APIType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AccountAssignmentCategoryCode
+                :Amount
+                :CompanyCode
+                :DateTime
+                :FixedSupplier
+                :PaymentTermsCode
+                :Plant
+                :PurchaseContractItemReference
+                :PurchaseDocumentAddress
+                :PurchaseDocumentItem
+                :PurchaseRequisition
+                :PurchaseRequisitionItem
+                :PurchaseRequisitionStatusCode
+                :PurchaseRequisitionTypeCode
+                :PurchasingGroup
+                :PurchasingInfoRecord
+                :PurchasingOrganization
+                :Supplier
+                :TaxCode
+                :TaxJurisdictionCode
+                :TimeZoneCode
+                :User
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AccountAssignmentCategoryCode
+                :Amount
+                :CompanyCode
+                :DateTime
+                :PaymentTermsCode
+                :Plant
+                :PurchaseContractItemReference
+                :PurchaseDocumentAddress
+                :PurchaseDocumentItem
+                :PurchaseRequisition
+                :PurchaseRequisitionItem
+                :PurchaseRequisitionStatusCode
+                :PurchaseRequisitionTypeCode
+                :PurchasingGroup
+                :PurchasingOrganization
+                :Supplier
+                :TaxCode
+                :TaxJurisdictionCode
+                :TimeZoneCode
+                :User
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AccountsPayableAccountant
+                :Manager
+                :Purchaser
+                :WarehouseClerk
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ApprovePurchaseOrder
+                :AssignSource
+                :ConvertPurchaseRequisitiontoPurchase_Order
+                :CreateSupplierInvoice
+                :IdentifyUnsourcedPurchaseRequisition
+                :PostGoodsReceipt
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Create
+                :CreateByAssociation
+                :Delete
+                :Update
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HTTPBody
+                :HTTPHeader
+                :RESTMethods
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MailTask
+                :ScriptTask
+                :ServiceTask
+                :UserTask
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :accountAssignmentCategory
+                :companyCode
+                :deliveryAddress
+                :deliveryAt
+                :deliveryTimeZone
+                :description
+                :displayId
+                :items
+                :logicalSystem
+                :note
+                :number
+                :parent
+                :paymentTerms
+                :plant
+                :preparer
+                :price
+                :purchaseContractItem
+                :purchasingGroup
+                :purchasingOrganization
+                :status
+                :supplier
+                :supplierLocation
+                :taxAmountPerUnit
+                :taxCode
+                :taxJurisdiction
+                :type
+                :version
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :description
+                :displayId
+                :items
+                :logicalSystem
+                :note
+                :preparer
+                :status
+                :version
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
