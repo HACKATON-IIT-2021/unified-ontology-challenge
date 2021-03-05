@@ -1,0 +1,1070 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14">
+    <Prefix name="" IRI="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AccountAssignmentCategoryCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessEntityModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Create"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreateByAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedSupplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModifyOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneDomainModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaymentTermsCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseContractItemReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseDocumentAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseDocumentItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseRequisitionStatusCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseRequisitionTypeCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchasingGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForFilterParameters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandardOperationCUD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxJurisdictionCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeZoneCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Update"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#accountAssignmentCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#companyCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deliveryAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deliveryAt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deliveryTimeZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#displayId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#logicalSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#note"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paymentTerms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preparer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#purchaseContractItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#purchasingGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#purchasingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#supplierLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#taxAmountPerUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#taxCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#taxJurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#version"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Relation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToBusinessActivityGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exchangesMessageWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAPIBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAPIBodyParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessProcessModelAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCollaboration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEndEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEntityType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFilterParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlowNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHttpMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLaneSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParallelGateway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequestBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSequenceFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasServiceTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructrueOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementedByAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsAPIRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsBusinessOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociationTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfColaboration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSucceededBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mapsToBusinessEntityOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesOnBusinessEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producesOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesInput"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#jsonBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#QueryForFilterParameters"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BusinessEntity"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+                <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AccountAssignmentCategoryCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#ModifyOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amount"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessAttribute"/>
+        <Class IRI="#OneDomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessEntity"/>
+        <Class IRI="#OneDomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessEntityModel"/>
+        <Class IRI="#SAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessOperation"/>
+        <Class IRI="#OneDomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Create"/>
+        <Class IRI="#StandardOperationCUD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreateByAssociation"/>
+        <Class IRI="#StandardOperationCUD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTime"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delete"/>
+        <Class IRI="#StandardOperationCUD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedSupplier"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#ReadOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModifyOperation"/>
+        <Class IRI="#BusinessOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneDomainModel"/>
+        <Class IRI="#BusinessEntityModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaymentTermsCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseContractItemReference"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseDocumentAddress"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseDocumentItem"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOperation"/>
+            <Class IRI="#UpdatePurchaseRequisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#description"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#displayId"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#logicalSystem"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#note"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#preparer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#status"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBusinessAttribute"/>
+            <Class IRI="#version"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#ID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisitionStatusCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseRequisitionTypeCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchasingGroup"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QueryOperation"/>
+        <Class IRI="#ReadOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadOperation"/>
+        <Class IRI="#BusinessOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardOperationCUD"/>
+        <Class IRI="#ModifyOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supplier"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxJurisdictionCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeZoneCode"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Update"/>
+        <Class IRI="#StandardOperationCUD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdatePurchaseRequisition"/>
+        <Class IRI="#Update"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#BusinessEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accountAssignmentCategory"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accountAssignmentCategory"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#AccountAssignmentCategoryCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#companyCode"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#companyCode"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAssociationTo"/>
+            <Class IRI="#CompanyCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryAddress"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryAddress"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#PurchaseDocumentAddress"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryAt"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryAt"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#DateTime"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryTimeZone"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deliveryTimeZone"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#TimeZoneCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#description"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#displayId"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logicalSystem"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#note"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#number"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parent"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAssociationTo"/>
+            <Class IRI="#PurchaseRequisition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paymentTerms"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paymentTerms"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#PaymentTermsCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plant"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAssociationTo"/>
+            <Class IRI="#Plant"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparer"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preparer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAssociationTo"/>
+            <Class IRI="#User"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#price"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#price"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#Amount"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#purchaseContractItem"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#purchaseContractItem"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#PurchaseContractItemReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#purchasingGroup"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#purchasingOrganization"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#status"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#status"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCompositionOf"/>
+            <Class IRI="#PurchaseRequisitionStatusCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supplier"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supplier"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAssociationTo"/>
+            <Class IRI="#Supplier"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supplierLocation"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxAmountPerUnit"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxAmountPerUnit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#Amount"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxCode"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxCode"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#TaxCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxJurisdiction"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taxJurisdiction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#TaxJurisdictionCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#type"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructrueOf"/>
+            <Class IRI="#PurchaseRequisitionTypeCode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#version"/>
+        <Class IRI="#BusinessAttribute"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Action"/>
+        <Class IRI="#Function"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Create"/>
+        <Class IRI="#CreateByAssociation"/>
+        <Class IRI="#Delete"/>
+        <Class IRI="#Update"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#PurchaseRequisition"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAPIBody"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jsonBody"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+        <Literal>{
+&quot;PurchaseRequisition&quot;:&quot;0010125586&quot;,
+&quot;PurchaseRequisitionItem&quot;:&quot;00010&quot;,
+&quot;PurchasingOrganization&quot;:&quot;E001&quot;,
+&quot;FixedSupplier&quot;:&quot;F1V1&quot;,
+&quot;PurchasingInfoRecord&quot;: &quot;5300007356&quot;
+}</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+        <Literal>00010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+        <Literal>0010125586</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Relation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToBusinessActivityGroup"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exchangesMessageWith"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAPIBody"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAPIBodyParameter"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessAttribute"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessProcessModelAttribute"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCollaboration"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEndEvent"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEntityType"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFilterParameter"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFlowNode"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHttpMethod"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasKey"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLane"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLaneSet"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOperation"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParallelGateway"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcess"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessFlow"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRequestBody"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSequenceFlow"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasService"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasServiceTask"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStartEvent"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStructrueOf"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasUserTask"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementedByAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementsAPIRequest"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementsBusinessOperation"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAssociationTo"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCompositionOf"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOfColaboration"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSucceededBy"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mapsToBusinessEntityOperation"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#operatesOnBusinessEntity"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#producesOutput"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesInput"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#jsonBody"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#jsonBody"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

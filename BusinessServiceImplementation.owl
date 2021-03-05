@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14">
+    <Prefix name="" IRI="http://www.semanticweb.org/i816674/ontologies/2021/1/untitled-ontology-14"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#APIBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIBodyParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIPackage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIServiceEntityFilterParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIServiceEntityType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API_PURCHASEREQ_PROCESS_SRV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A_PurchaseRequisitionItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessServiceImplementation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DELETE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GET"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Get_API_PURCHASEREQ_PROCESS_SRV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTTPBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTTPHeader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ODATA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PATCH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#POST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicAPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryForAPICallBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#REST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RESTMethods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAPGraph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SOAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAP_S/4HANA_CLOUD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Relation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToBusinessActivityGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exchangesMessageWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAPIBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAPIBodyParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessProcessModelAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCollaboration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEndEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEntityType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFilterParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlowNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHttpMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLaneSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParallelGateway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequestBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSequenceFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasServiceTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructrueOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementedByAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsAPIRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsBusinessOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociationTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfColaboration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSucceededBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mapsToBusinessEntityOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesOnBusinessEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producesOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesInput"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#jsonBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#QueryForAPICallBody"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#APIBody"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+                <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#APIBody"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIBody"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+            <Class IRI="#APIService"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIBodyParameter"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIPackage"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIRequest"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIService"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIServiceEntityFilterParameter"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIServiceEntityType"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIType"/>
+        <Class IRI="#SAPAPIBusinessHub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#API_PURCHASEREQ_PROCESS_SRV"/>
+        <Class IRI="#APIService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#API_PURCHASEREQ_PROCESS_SRV"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEntityType"/>
+            <Class IRI="#A_PurchaseRequisitionItem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A_PurchaseRequisitionItem"/>
+        <Class IRI="#APIServiceEntityType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessServiceImplementation"/>
+        <Class IRI="#SAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DELETE"/>
+        <Class IRI="#RESTMethods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GET"/>
+        <Class IRI="#RESTMethods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Get_API_PURCHASEREQ_PROCESS_SRV"/>
+        <Class IRI="#API_PURCHASEREQ_PROCESS_SRV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HTTPBody"/>
+        <Class IRI="#REST"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HTTPHeader"/>
+        <Class IRI="#REST"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ODATA"/>
+        <Class IRI="#APIType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PATCH"/>
+        <Class IRI="#RESTMethods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#POST"/>
+        <Class IRI="#RESTMethods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicAPI"/>
+        <Class IRI="#BusinessServiceImplementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#REST"/>
+        <Class IRI="#BusinessServiceImplementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RESTMethods"/>
+        <Class IRI="#REST"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SAPAPIBusinessHub"/>
+        <Class IRI="#PublicAPI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SAPGraph"/>
+        <Class IRI="#PublicAPI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SOAP"/>
+        <Class IRI="#APIType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SAP_S/4HANA_CLOUD"/>
+        <Class IRI="#APIPackage"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#APIBody"/>
+        <Class IRI="#APIBodyParameter"/>
+        <Class IRI="#APIPackage"/>
+        <Class IRI="#APIRequest"/>
+        <Class IRI="#APIService"/>
+        <Class IRI="#APIServiceEntityFilterParameter"/>
+        <Class IRI="#APIServiceEntityType"/>
+        <Class IRI="#APIType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HTTPBody"/>
+        <Class IRI="#HTTPHeader"/>
+        <Class IRI="#RESTMethods"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ODATA"/>
+        <Class IRI="#SOAP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SAPAPIBusinessHub"/>
+        <Class IRI="#SAPGraph"/>
+    </DisjointClasses>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAPIBody"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+        <NamedIndividual IRI="#EKG_POC_API_CALL"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jsonBody"/>
+        <NamedIndividual IRI="#EKG_POC_API_BODY"/>
+        <Literal>{
+&quot;PurchaseRequisition&quot;:&quot;0010125586&quot;,
+&quot;PurchaseRequisitionItem&quot;:&quot;00010&quot;,
+&quot;PurchasingOrganization&quot;:&quot;E001&quot;,
+&quot;FixedSupplier&quot;:&quot;F1V1&quot;,
+&quot;PurchasingInfoRecord&quot;: &quot;5300007356&quot;
+}</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR"/>
+        <Literal>00010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#EKG_POC_FILTER_PR_ITEM"/>
+        <Literal>0010125586</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+        <ObjectProperty IRI="#Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Relation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToBusinessActivityGroup"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exchangesMessageWith"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAPIBody"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAPIBodyParameter"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessAttribute"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessProcessModelAttribute"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCollaboration"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEndEvent"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEntityType"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFilterParameter"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFlowNode"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHttpMethod"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasKey"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLane"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLaneSet"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOperation"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParallelGateway"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcess"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessFlow"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRequestBody"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSequenceFlow"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasService"/>
+        <ObjectProperty IRI="#BusinessServiceModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasServiceTask"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStartEvent"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStructrueOf"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasUserTask"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementedByAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementsAPIRequest"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implementsBusinessOperation"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isABodyInBusinessServiceAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAFilterInBusinessServiceAPI"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndServiceModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAssociationTo"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCompositionOf"/>
+        <ObjectProperty IRI="#BusinessEntityModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOfColaboration"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSucceededBy"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mapsToBusinessEntityOperation"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#operatesOnBusinessEntity"/>
+        <ObjectProperty IRI="#CrossBusinessEntityAndProcessModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#producesOutput"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesInput"/>
+        <ObjectProperty IRI="#BusinessProcessModelRelation"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#jsonBody"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#jsonBody"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
