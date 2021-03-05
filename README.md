@@ -20,7 +20,7 @@ VDM / RAP Modeling on BOs and BOS Behavior /Operations/ Actions for transactiona
 https://help.sap.com/viewer/923180ddb98240829d935862025004d6/Cloud/en-US/a3ff9dcdb25a4f1a9408422b8ba5fa00.html
 
  
-## Usage Example:
+## Usage Example, SPARQL queries on the graph:
 
 1. Get possible actions, next step in the process and API Signature by Entity Name
 
