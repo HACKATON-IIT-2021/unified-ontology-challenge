@@ -1,19 +1,16 @@
 # HACKATON_IIT_2021 Unified Ontology Challenge
 ## Building Blocks
 
-Here are the links to the different models used within this ontology :
+Here are the links to the different models/sources of information used to build the examples of graphs in this repository:
  
 The API in the SAP API Hub
 https://api.sap.com/api/API_PURCHASEREQ_PROCESS_SRV/resource
  
-oData metadata of the service:
-https://wwt940-qkb910.wdf.sap.corp/sap/opu/odata/sap/API_PURCHASEREQ_PROCESS_SRV/$metadata
- 
 ODM Business entity model:
-https://github.wdf.sap.corp/DMA/ODM/blob/main/models/procurement/PurchaseRequisition.cds
- 
-EARL Business Process workflow Source-To-Pay:
-https://val.earl.only.sap/#/solutionProcess/4c631f52ae2743d2bcee63e866e6731b/?tab=SolutionActivities
+https://github.com/HACKATON-IIT-2021/unified-ontology/blob/main/ProcurementEntityModels/PurchaseRequisition.cds
+
+Business Process workflow Source-To-Pay:
+https://github.com/HACKATON-IIT-2021/unified-ontology/blob/main/procurementToPay.bpmn
  
 Actions:
 VDM / RAP Modeling on BOs and BOS Behavior /Operations/ Actions for transactional Data.
