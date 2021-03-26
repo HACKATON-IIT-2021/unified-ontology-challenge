@@ -7,6 +7,7 @@ The API in the SAP API Hub
 https://api.sap.com/api/API_PURCHASEREQ_PROCESS_SRV/resource
  
 ODM Business entity model:
+https://api.sap.com/sap-one-domain-model
 https://github.com/HACKATON-IIT-2021/unified-ontology/blob/main/ProcurementEntityModels/PurchaseRequisition.cds
 
 Business Process workflow Source-To-Pay:
