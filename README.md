@@ -1,5 +1,5 @@
 # HACKATON_IIT_2021 Unified Ontology Challenge
-## Building Blocks
+## Ressources and references to be used for the challenge:
 
 Here are the links to the different models/sources of information used to build the examples of graphs in this repository:
  
@@ -10,15 +10,19 @@ ODM Business entity model:
 https://api.sap.com/sap-one-domain-model
 https://github.com/HACKATON-IIT-2021/unified-ontology/blob/main/ProcurementEntityModels/PurchaseRequisition.cds
 
-Business Process workflow Source-To-Pay:
+Business Process workflow Source-To-Pay in BPMN:
 https://github.com/HACKATON-IIT-2021/unified-ontology/blob/main/procurementToPay.bpmn
  
 Actions:
 VDM / RAP Modeling on BOs and BOS Behavior /Operations/ Actions for transactional Data.
 https://help.sap.com/viewer/923180ddb98240829d935862025004d6/Cloud/en-US/a3ff9dcdb25a4f1a9408422b8ba5fa00.html
 
+Ontology Design Patterns:
+https://www.researchgate.net/publication/227215903_Ontology_Design_Patterns
+
+https://schema.org/
  
-## Usage Example, SPARQL queries on the graph:
+## Evaluation query based on SPARQL on the graph:
 
 1. Get possible actions, next step in the process and API Signature by Entity Name
 
