@@ -3,7 +3,7 @@
 
 Here are the links to the different models/sources of information used to build the examples of graphs in this repository:
 
-SAP Help on the domain Purchase Requisition
+SAP Help on the domain Procurement / Purchase Requisition
 https://help.sap.com/viewer/bb9f1469daf04bd894ab2167f8132a1a/2011.500/en-US/43c43f584eff2160e10000000a44147b.html
  
 The API in the SAP API Hub
